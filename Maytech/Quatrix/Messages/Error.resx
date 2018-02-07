@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="api_account_suspended" xml:space="preserve">
+    <value>This Quatrix account is not currently active. Speak to your administrator or contact Quatrix Customer Care</value>
+  </data>
+  <data name="api_host_invalid" xml:space="preserve">
+    <value>This Quatrix domain is not registered</value>
+    <comment>Internal error</comment>
+  </data>
+  <data name="api_login_not_allowed" xml:space="preserve">
+    <value>You are not allowed to log in to this account, please contact your Administrator for assistance.</value>
+  </data>
+  <data name="api_metadata_move_to_itself" xml:space="preserve">
+    <value>You can't move folder to itself</value>
+    <comment>Internal error</comment>
+  </data>
+  <data name="api_metadata_not_directory" xml:space="preserve">
+    <value>Current metadata is not directory</value>
+    <comment>Internal error</comment>
+  </data>
+  <data name="api_new_name_param_null" xml:space="preserve">
+    <value>New name parameter cannot be empty</value>
+    <comment>Internal</comment>
+  </data>
+  <data name="api_not_logined" xml:space="preserve">
+    <value>Incorrect login credentials</value>
+    <comment>Ex/Internal</comment>
+  </data>
+  <data name="api_parameter_password_empty" xml:space="preserve">
+    <value>User password is empty</value>
+    <comment>External</comment>
+  </data>
+  <data name="api_parameter_password_too_long" xml:space="preserve">
+    <value>Your password should not exceed 64 characters</value>
+    <comment>External</comment>
+  </data>
+  <data name="api_parameter_passwortd_too_short" xml:space="preserve">
+    <value>Your password should contain at least 6 characters</value>
+    <comment>External</comment>
+  </data>
+  <data name="api_parent_metadata_null" xml:space="preserve">
+    <value>Parent metadata is not set!</value>
+    <comment>Internal error</comment>
+  </data>
+  <data name="api_share_invalid_expire" xml:space="preserve">
+    <value>The expire date should be later than the release date</value>
+    <comment>External</comment>
+  </data>
+  <data name="api_share_invalid_release" xml:space="preserve">
+    <value>The release date should be earlier than the expiry date</value>
+    <comment>External</comment>
+  </data>
+  <data name="api_share_no_files" xml:space="preserve">
+    <value>No files to share</value>
+    <comment>External</comment>
+  </data>
+  <data name="api_share_no_receivers" xml:space="preserve">
+    <value>No receivers specified</value>
+    <comment>External</comment>
+  </data>
+  <data name="authorizaion_code_invalid" xml:space="preserve">
+    <value>Invalid authorization code</value>
+  </data>
+  <data name="authorization_code_required" xml:space="preserve">
+    <value>Authorization code required</value>
+  </data>
+  <data name="diff_from_later_than_to" xml:space="preserve">
+    <value>Diff end date can't be early then start date</value>
+    <comment>Internal</comment>
+  </data>
+  <data name="directory_name_param_empty" xml:space="preserve">
+    <value>Folder name param is empty!</value>
+    <comment>Internal</comment>
+  </data>
+  <data name="internet_not_connected" xml:space="preserve">
+    <value>No Internet connection. Check your connection and try again.</value>
+    <comment>Not use at the moment</comment>
+  </data>
+  <data name="invalid_chunk_size" xml:space="preserve">
+    <value>Invalid value for chunk size</value>
+  </data>
+  <data name="operation_delete_failed" xml:space="preserve">
+    <value>Delete action is failed</value>
+  </data>
+  <data name="operation_not_allowed_folder_zero_size" xml:space="preserve">
+    <value>Folder has zero size</value>
+  </data>
+  <data name="unsupported_authorizaion_type" xml:space="preserve">
+    <value>Unsupported authorization type</value>
+  </data>
+  <data name="user_pin_invalid" xml:space="preserve">
+    <value>Invalid user PIN</value>
+  </data>
+  <data name="user_pin_required" xml:space="preserve">
+    <value>User PIN required</value>
+  </data>
+</root>

@@ -1,0 +1,31 @@
+﻿Code	Meaning
+------------------------------------
+-1		Unknown error
+10		Bad parameter value
+11		Missing parameter
+12		Bad hostname
+13		Account is suspended
+14		Not authorized
+15		Login not allowed
+20		Not found
+21		Not supported
+30		Object exists
+31		User exists
+32		Contact exists
+50		Restriction error
+60		Expired error
+70		Not allowed
+71		Not enought cloud space
+80		Deactivated
+81		Inactive
+90		No data
+91		Metadata not a directory
+92		Can't move metadata to itself
+93		Diff end date can't be early then start date
+94		Empty metadata collection
+95		Null destination folder on upload
+96		Metadata with same name already exists
+100		share with out files
+101		share with out receivers
+102		invalid expire date
+103		invalid release date

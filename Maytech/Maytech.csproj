@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D75E9261-ADAE-4E26-926A-C11586D16599}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maytech</RootNamespace>
+    <AssemblyName>Maytech</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>$(SolutionDir)packages\Newtonsoft.Json.8.0.3\lib\net35\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quatrix\Debug.cs" />
+    <Compile Include="Quatrix\Entity\AccountInfo.cs" />
+    <Compile Include="Quatrix\Entity\DiffAction.cs" />
+    <Compile Include="Quatrix\Entity\Contact.cs" />
+    <Compile Include="Quatrix\Entity\Description.cs" />
+    <Compile Include="Quatrix\Entity\Diff.cs" />
+    <Compile Include="Quatrix\Entity\Id.cs" />
+    <Compile Include="Quatrix\Entity\IQMetadata.cs" />
+    <Compile Include="Quatrix\Entity\QIds.cs" />
+    <Compile Include="Quatrix\Entity\Job.cs" />
+    <Compile Include="Quatrix\Entity\Metadata.cs" />
+    <Compile Include="Quatrix\Entity\MetadataAttributes.cs" />
+    <Compile Include="Quatrix\Entity\MetadataType.cs" />
+    <Compile Include="Quatrix\Entity\Profile.cs" />
+    <Compile Include="Quatrix\Entity\QEntity.cs" />
+    <Compile Include="Quatrix\Entity\QuotaInfo.cs" />
+    <Compile Include="Quatrix\Entity\Service.cs" />
+    <Compile Include="Quatrix\Entity\Session.cs" />
+    <Compile Include="Quatrix\Entity\ShareAction.cs" />
+    <Compile Include="Quatrix\Entity\ShareDownloadInfo.cs" />
+    <Compile Include="Quatrix\Entity\ShareFile.cs" />
+    <Compile Include="Quatrix\Entity\ShareParameters.cs" />
+    <Compile Include="Quatrix\Entity\ShareTypes.cs" />
+    <Compile Include="Quatrix\Entity\UploadInfo.cs" />
+    <Compile Include="Quatrix\Entity\User.cs" />
+    <Compile Include="Quatrix\Entity\UserPgpInfo.cs" />
+    <Compile Include="Quatrix\HttpRequest.cs" />
+    <Compile Include="Quatrix\IQEntity.cs" />
+    <Compile Include="Quatrix\IQuatrixRequest.cs" />
+    <Compile Include="Quatrix\IQuatrixSystemDirectories.cs" />
+    <Compile Include="Quatrix\Messages\Error.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Error.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Quatrix\Notifications\MqNotification.cs" />
+    <Compile Include="Quatrix\Operations\AccountActions.cs" />
+    <Compile Include="Quatrix\Operations\ContactActions.cs" />
+    <Compile Include="Quatrix\Operations\FileOperations.cs" />
+    <Compile Include="Quatrix\Operations\ProfileActions.cs" />
+    <Compile Include="Quatrix\Operations\ShareOperations.cs" />
+    <Compile Include="Quatrix\Operations\UploadAction.cs" />
+    <Compile Include="Quatrix\QApi.cs" />
+    <Compile Include="Quatrix\QuatrixBlacklistException.cs" />
+    <Compile Include="Quatrix\QuatrixObjectNotFoundException.cs" />
+    <Compile Include="Quatrix\QuatrixQuotaExceededException.cs" />
+    <Compile Include="Quatrix\QRequest.cs" />
+    <Compile Include="Quatrix\QSession.cs" />
+    <Compile Include="Quatrix\QuatrixContactExistsException.cs" />
+    <Compile Include="Quatrix\QuatrixParameterException.cs" />
+    <Compile Include="Quatrix\QuatrixNotAllowedException.cs" />
+    <Compile Include="Quatrix\QuatrixAuthorizationException.cs" />
+    <Compile Include="Quatrix\QuatrixException.cs" />
+    <Compile Include="Quatrix\QuatrixMetadataNotDirectoryException.cs" />
+    <Compile Include="Quatrix\QuatrixObjectExistsException.cs" />
+    <Compile Include="Quatrix\QuatrixPermissionDeniedException.cs" />
+    <Compile Include="Quatrix\QuatrixShareException.cs" />
+    <Compile Include="Quatrix\QuatrixUserExistsException.cs" />
+    <Compile Include="Quatrix\RememberOptions.cs" />
+    <Compile Include="Quatrix\HttpResult.cs" />
+    <Compile Include="Quatrix\SessionStatus.cs" />
+    <Compile Include="Quatrix\SETTINGS.cs" />
+    <Compile Include="Quatrix\Diagnostics\Logger.cs" />
+    <Compile Include="Quatrix\Diagnostics\LogLevel.cs" />
+    <Compile Include="Quatrix\QuatrixExceptionArgs.cs" />
+    <Compile Include="Quatrix\QuatrixInvalidHostException.cs" />
+    <Compile Include="Quatrix\SessionKeepAlive.cs" />
+    <Compile Include="Quatrix\Transfer\DownloadMetadata.cs" />
+    <Compile Include="Quatrix\Transfer\FileChunkUpload.cs" />
+    <Compile Include="Quatrix\Transfer\FileModify.cs" />
+    <Compile Include="Quatrix\Transfer\FolderUpload.cs" />
+    <Compile Include="Quatrix\Transfer\IQuatrixTransfer.cs" />
+    <Compile Include="Quatrix\Utils.cs" />
+    <Compile Include="Quatrix\Validation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Quatrix\error codes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Quatrix\Messages\Error.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Error.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
